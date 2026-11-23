@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>English Stage 3 Assessment – Unit 2B & Unit 3</title>
+<style>
+:root{--bg:#f6f4ff;--cd:#fff;--tx:#1d1b2e;--mu:#68657f;--pr:#6c47ff;--ok:#12a150;--no:#e5484d;--bd:#ddd8f3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14121f;--cd:#1f1c30;--tx:#f1eefc;--mu:#a5a2bd;--pr:#9b82ff;--bd:#35314d}}
+:root[data-theme="dark"]{--bg:#14121f;--cd:#1f1c30;--tx:#f1eefc;--mu:#a5a2bd;--pr:#9b82ff;--bd:#35314d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 14px 40px}main{max-width:680px;margin:0 auto}
+h1{font-size:1.45rem;margin:16px 0 4px}h2{font-size:1.2rem;margin:22px 0 8px;color:var(--pr)}.mu{color:var(--mu);font-size:.92rem}
+.c{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin:10px 0}.ps{white-space:pre-line;border-left:4px solid var(--pr)}
+label.o{display:block;padding:10px 12px;margin:6px 0;border:2px solid var(--bd);border-radius:12px;cursor:pointer}label.o:has(input:checked){border-color:var(--pr)}label.o input{margin-right:8px}
+input[type=text]{width:100%;font:inherit;padding:11px;border:2px solid var(--bd);border-radius:12px;background:var(--cd);color:var(--tx)}
+button{font:inherit;border:0;border-radius:12px;padding:14px;width:100%;background:var(--pr);color:#fff;font-weight:700;margin:12px 0;min-height:50px;cursor:pointer}
+.fb{padding:9px 12px;border-radius:12px;margin-top:8px;font-size:.95rem}.g{background:rgba(18,161,80,.16)}.b{background:rgba(229,72,77,.16)}
+.big{font-size:2rem;font-weight:800;text-align:center}.tips li{margin:4px 0}
+@media print{button{display:none}}
+</style></head><body><main>
+<h1>📚 English Stage 3 Assessment</h1><div class="mu">Unit 2B: Having Fun With Friends · Unit 3: Stories from the Past<br>17 marks · about 20 minutes · it marks itself when you press the button</div>
+<div class="c"><label>Child’s name<br><input type="text" id="nm" placeholder="Type name here" autocomplete="off"></label></div>
+<div id="q"></div><button id="mk">Check my answers</button><div id="out"></div>
+<script>
+const $=s=>document.querySelector(s),sh=a=>[...a].sort(()=>Math.random()-.5);
+const S=[{n:"Part 1 · Unit 2B Recipes and Words",p:"Fruit Salad (serves 4)\n\nWhat You Will Need\n• 2 apples\n• a handful of grapes\n• half a cup of orange juice\n• 1 spoon of honey\n\nWhat To Do\n1. Wash the fruit.\n2. Cut the apples and grapes into small pieces.\n3. Mix the juice and honey in a bowl.\n4. Pour it over the fruit and stir.",
+q:[["Which heading tells you the steps to follow?","mc","What To Do",["What You Will Need","Fruit Salad","Serves 4"],"“What To Do” (Instructions) gives the numbered steps."],
+["Which ingredient is a liquid (wet)?","mc","orange juice",["apples","grapes","the bowl"],"Orange juice contains liquid."],
+["Why are the instructions numbered?","mc","So you do them in the right order",["To make the recipe longer","Because it is a poem","To make it sweeter"],"Each number shows what to do next."],
+["Sam cut the fruit by ______. (Write the missing word.)","tx",["himself"],null,"Sam is a boy doing the action, so use himself."],
+["Which pronoun can replace “the girls”?","mc","They",["She","It","He"],"“The girls” is more than one person: they."],
+["Which word has a HARD c (like “cat”)?","mc","cut",["city","circle","cent"],"In cut, c sounds like k. In city, c sounds like s."],
+["Which word has a SOFT g (like “giant”)?","mc","giant",["goat","gift","game"],"In giant, g sounds like j."],
+["Write another word for “yummy”.","tx",["delicious","tasty","scrumptious","tasty."],null,"Synonyms of yummy: delicious, tasty, scrumptious."]]},
+{n:"Part 2 · Unit 3 Stories from the Past",p:"The Boy Who Saved the Village\n\nLong ago, in a village by a wide river, there lived a boy named Karim. Every spring, the river flooded the fields. One dark night, Karim climbed the hill and lit a great fire. The villagers saw the light and escaped just in time. The elders said, “You are the bravest boy in the land!”",
+q:[["Why is this text probably a legend?","mc","It is about a brave person from long ago",["It has talking animals","It is a recipe","It is a poem"],"Legends tell of amazing people from the past."],
+["“Long ago,” is a sentence opening about…","mc","time",["place","how","a person"],"Long ago tells us when."],
+["“The villagers escaped just in time.” is a…","mc","statement",["question","command","exclamation"],"It tells us something and ends with a full stop."],
+["“Light the fire!” is a…","mc","command",["statement","question","exclamation"],"It tells someone to do something."],
+["How did Karim warn the village? (Write a short answer.)","tx",["fire","lit a fire","he lit a fire","with a fire","by lighting a fire","a fire","he lit a great fire"],"~fire","He climbed the hill and lit a great fire."],
+["Karim was small, ___ he was brave.","mc","but",["and","because","so"],"But joins two different ideas."],
+["Which sentence is written correctly?","mc","The elders said, “You saved us!”",["The elders said you saved us!”","“The elders said, You saved us!","The elders said “You saved us”"],"Put the spoken words inside quotation marks."],
+["This text is prose because it…","mc","is written in full sentences",["has short rhyming lines","has no characters","is a list"],"Poems use shorter lines and rhythm."],
+["Which word rhymes with “now”?","mc","how",["low","go","so"],"now and how end with the same sound."]]}];
+let X=[];const q=$("#q");
+S.forEach((s,i)=>{q.insertAdjacentHTML("beforeend",`<h2>${s.n}</h2><div class="c ps">${s.p}</div>`);
+s.q.forEach((d,j)=>{const k=X.length;let o=null;if(d[1]=="mc")o=sh([d[2],...d[3]]);X.push({d,o,s:i});
+q.insertAdjacentHTML("beforeend",`<div class="c"><b>${j+1}. ${d[0]}</b>`+(o?o.map((t,n)=>`<label class="o"><input type="radio" name="q${k}" value="${n}">${t}</label>`).join(""):`<input type="text" id="t${k}" autocomplete="off" autocapitalize="off" placeholder="Type your answer">`)+`<div id="r${k}"></div></div>`)})});
+$("#mk").onclick=()=>{const sc=[0,0],tot=[0,0];
+X.forEach((x,k)=>{const d=x.d;tot[x.s]++;let ok=false,ans;
+if(x.o){const c=document.querySelector(`input[name=q${k}]:checked`);ok=c&&x.o[+c.value]==d[2];ans=d[2]}
+else{const v=$("#t"+k).value.trim().toLowerCase().replace(/[.!]$/,"");ans=d[2][0];ok=d[3]=="~fire"?v.includes("fire"):d[2].includes(v)&&v!=""}
+if(ok)sc[x.s]++;$("#r"+k).innerHTML=`<div class="fb ${ok?"g":"b"}">${ok?"✅ Correct!":"❌ Not quite. Answer: <b>"+ans+"</b>"}<br>${d[x.o?4:4]}</div>`});
+const t=sc[0]+sc[1],n=$("#nm").value.trim()||"Your child",p=Math.round(t/17*100);
+const tip=(v,m,a)=>v/m<.6?`<li><b>${a}</b>: needs more practice. Revisit it together.</li>`:`<li><b>${a}</b>: well done!</li>`;
+$("#out").innerHTML=`<div class="c"><div class="big">${p>=80?"🌟":p>=50?"👍":"💪"} ${t} / 17</div><p style="text-align:center"><b>${n}</b> scored ${p}%.</p><ul class="tips">${tip(sc[0],8,"Recipes, pronouns and word sounds")}${tip(sc[1],9,"Legends, sentence types and dialogue")}</ul><p class="mu">Tip for parents: read the answer notes under each question together, then try again tomorrow.</p></div><button onclick="location.reload()">Try again</button>`;
+$("#mk").style.display="none";window.scrollTo(0,document.body.scrollHeight)};
+</script></main></body></html>
